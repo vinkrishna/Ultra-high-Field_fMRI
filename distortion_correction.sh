@@ -39,9 +39,9 @@ fslview struct.nii.gz diff2struct.nii.gz diff2struct_fast_wmedge.nii.gz
 
 
 # STEP6: apply on the RS_01 4D scans
-applytopup --imain=sub-zr784901DK_task-rest_acq-multiband_run-01_bold.nii.gz --topup=topup_AP_PA --datain=acqparams.txt --inindex=2 --out=rs_01_topup
+#applytopup --imain=sub-zr784901DK_task-rest_acq-multiband_run-01_bold.nii.gz --topup=topup_AP_PA --datain=acqparams.txt --inindex=2 --out=rs_01_topup
 
-
+applytopup --imain=sub-zr784901DK_task-rest_acq-multiband_run-01_bold.nii.gz --inindex=2 --method=jac --datain=acqparams.txt --topup=topup_AP_PA --out=rs01_unwarped
 
 
 
